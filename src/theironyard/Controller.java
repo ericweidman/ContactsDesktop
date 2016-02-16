@@ -29,10 +29,12 @@ public class Controller implements Initializable {
 
     }
     public void addContact(){
-        contact.add(new Contact(text.getText(), text1.getText(), text2.getText()));
-        text.setText("");
-        text1.setText("");
-        text2.setText("");
+        if(!text.getText().equals("") && !text1.getText().equals("") && !text2.getText().equals("")) {
+            contact.add(new Contact(text.getText(), text1.getText(), text2.getText()));
+            text.setText("");
+            text1.setText("");
+            text2.setText("");
+        }
     }
     public void removeContact(){
         Contact contact1 = (Contact) list.getSelectionModel().getSelectedItem();
