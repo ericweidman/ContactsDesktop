@@ -28,8 +28,6 @@ public class Controller implements Initializable {
     TextField text2;
 
 
-
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
